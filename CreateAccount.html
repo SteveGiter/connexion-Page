@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreationAccount</title>
+    <link rel="stylesheet" href="styles\CreateAccount_style.css">
+</head>
+<body>
+    <main>
+        <section class="Leftblock">
+            <div class="text_creerUnCompte">
+                <h1>Créer un compte</h1>
+            </div>
+            <div class="bodyLeft">
+                <div class="entry">
+                    <div class="NomComplet">
+                        <form action="/get" methode="get">
+                            <label class="label-nom" for="name">Mon</label>
+                            <input type="text" id="complet_username" name="username" placeholder="Nom complet">
+                        </form>
+                    </div>
+                    <div class="email">
+                        <form action="/get" methode="get">
+                            <label class="label-email" for="email">Email</label>
+                            <input type="text" id="email" name="useremail" placeholder="Entrez votre email">
+                        </form>  
+                    </div>
+                    <div class="niveau">
+                        <form action="/get" methode="get">
+                            <label class="label-level" for="level">Niveau</label>
+                            <select name="ChoixNiveau" id="levelChoise">
+                                <option value="1">X1</option>
+                                <option value="2">X2</option>
+                                <option value="3">X3</option>
+                                <option value="4">X4</option>
+                                <option value="5">X5</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="password">
+                        <form action="/get" methode="get">
+                            <label class="label-password" for="password">Mot de passe</label>
+                            <input type="password" id="password" name="userpassword" placeholder="Entrez votre mot de passe">
+                        </form>
+                    </div>
+                </div>
+                <div class="CreateAccount">
+                    <button class="CreateAccontButton">
+                        Créer un compte
+                    </button>
+                </div>
+                <div class="inscription">
+                    <p class="motDinscription">Avez-vous déjà un compte? <a class="creatCount" href="Connexion.html">Connectez vous</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="rightblock">
+            <img id="imgRight" src="assets\Creation de compte\My password-amico 1.jpg" alt="Connexion à notre platefoeme">
+        </section>
+    </main>
+</body>
+</html>

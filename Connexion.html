@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles\Connexion_style.css">
+</head>
+<body>
+    <main>
+        <section class="Leftblock">
+            <div class="text_seConnecter">
+                <h1>Se connecter</h1>
+            </div>
+            <div class="bodyLeft">
+                <div class="entry">
+                    <div class="email">
+                        <form action="/get" methode="get">
+                            <label class="label-email" for="email">Email</label>
+                            <input type="text" id="email" name="useremail" placeholder="Entrez votre email">
+                        </form>
+                        
+                    </div>
+                    <div class="password">
+                        <form action="/get" methode="get">
+                            <label class="label-password" for="password">Mot de passe</label>
+                            <input type="password" id="password" name="userpassword" placeholder="Entrez votre mot de passe">
+                        </form>
+                    </div>
+                </div>
+                <div class="lostPassword">
+                    <button class="passwordLost">
+                        Mot de pass oublié ?
+                    </button>
+                </div>
+                <div class="Connexion">
+                    <button class="ConnexionButton">
+                        Se connecter
+                    </button>
+                </div>
+                <div class="inscription">
+                    <p class="motDinscription">Vous n'avez pas de compte? <a class="creatCount" href="CreateAccount.html">Creéz un nouveau compte</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="rightblock">
+            <img id="imgRight" src="assets\Connexion\My password-amico 1.jpg" alt="Connexion à notre platefoeme">
+        </section>
+    </main>
+</body>
+</html>

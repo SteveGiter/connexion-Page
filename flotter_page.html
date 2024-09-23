@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web avec Page Flottante</title>
+    <link rel="stylesheet" href="styles\flotter_style.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1>Contenu de la page principale</h1>
+        <p>Ceci est le contenu de la page principale.</p>
+        <button onclick="document.getElementById('modal').classList.add('active')">Ouvrir la page flottante</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="document.getElementById('modal').classList.remove('active')">&times;</span>
+            <h2>Page Web Flottante</h2>
+            <p>Ceci est le contenu de la page flottante.</p>
+        </div>
+    </div>
+</body>
+</html>

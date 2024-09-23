@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Add CER</title>
+    <link rel="stylesheet" href="styles\AddNewCER.css">
+</head>
+<body>
+    <main>
+        <section class="entete">
+            <div class="titre">
+                <h1>Ajouter un nouveau CER</h1>
+            </div>
+            <div class="croix">
+                <img src="assets\AjouterUnNouveauCER\close.jpg" alt="Croix">
+            </div>
+        </section>
+        <section class="body-section">
+            <div class="titre_du_CER_1">
+                <h3 class="titre" for="titre_du_CER">
+                    Titre du CER
+                </h3>
+                <form action="/get" method="post">
+                    <input class="titre_du_CER_2" type="text" name="titre_du_CER" placeholder="Exemple: Prosit 4.3 - Recherche Opérationnelle ">
+                </form>
+            </div>
+            <div class="Niveaux">
+                <form action="/get" methode="get">
+                    <h3 class="niveau" for="level">Niveau</h3>
+                    <select name="ChoixNiveau" id="levelChoise">
+                        <option value="1">X1</option>
+                        <option value="2">X2</option>
+                        <option value="3">X3</option>
+                        <option value="4">X4</option>
+                        <option value="5">X5</option>
+                    </select>
+                </form>
+            </div>
+            <div class="DomainesDeSpecialite">
+                <h3 class="titre" for="levelChoise">Domaines de  spécialité</h3>
+                <form method="post" action="/get">
+                    <ul>
+                        <li><input type="checkbox" name="ChoixNiveau" value="oui"><label for="levelChoise">Gestion de projet</label></li>
+                        <li><input type="checkbox" name="ChoixNiveau" value="oui"><label for="levelChoise">Génie-logiciel</label></li>
+                        <li><input type="checkbox" name="ChoixNiveau" value="oui"><label for="levelChoise">Résaux & Infra</label></li>
+                        <li><input type="checkbox" name="ChoixNiveau" value="oui"><label for="levelChoise">Sécurité</label></li>
+                        <li><input type="checkbox" name="ChoixNiveau" value="oui"><label for="levelChoise">Data</label></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="Description_du_CER">
+                <h3 class="description">Description du CER </h3>
+                <textarea class="description" name="zone_de_texte" placeholder="Entrez ici la description ou un résumé de votre CER..." rows="15" cols="82">
+                </textarea>
+            </div>
+            <div class="pied">
+                <h3>Fichiers du CER</h3>
+                <div class="espace_de_depot">
+                    <div class="zone_de_depot" id="zone1">
+                        <img class="fichier" src="assets\AjouterUnNouveauCER\Icon.png" alt="Icone_de_fichier">
+                    </div>
+                    <div class="zone_de_depot">
+                        <button class="click">Cliquez ici pour attacher le fichier du CER (.pdf ou.docx)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="save">
+                <button class="save_button">
+                    Enregister
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

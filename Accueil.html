@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva</title>
+    <link rel="stylesheet" href="styles\Accueil_style.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="logo">
+                <img src="assets\Accueil\logo.png" alt="Archiva">
+            </div>
+            <ul>
+                <li><a class="accueil" href="Accueil.html">Accueil</a></li>
+                <li><a href="#">CERs</a></li>
+                <li><a href="#">Mes CER Favoris</a></li>
+                <li><a href="#">Gestion de CER</a></li>
+            </ul>
+            <!--
+            <button class="connexion">Connexion</button>
+            -->
+            <a class="connexion" href="Connexion.html">Connexion</a> <!--J'ai changer le bouton de 
+            connexion en simple balise de lien "a" par souci de tester la navigation entre les trois
+            modules (HTML/CSS) que j'ai développé cette dernier ligne de code est donc effacer et la
+            précédente à décommenter-->
+        </nav>
+    </header>
+    <main>
+        <section class="Hero">
+            <form action="/search" method="get">
+                <input class="search_bar" type="search" name="query" placeholder="Rechercher un CER...">
+            </form>
+            <div class="top_block">
+                <div class="welcome">
+                    <h1>Bienvenue sur Archiva, votre espace</h1>
+                </div>
+                <h2>Espace d'archivage d'anciens CERs</h2>
+                <h4>L'homme n'est rien sans bord</h4>
+                <div class="Deuxbuttons">
+                    <button class="ExplorePlusDeCER">Explorer plus de CER</button>
+                    <button class="TouslesCERs">Tous les CERs</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="prositPresentation">
+            <h1>Les meilleurs CERs du moment</h1>
+            <div class="BestCERs">
+                    
+                    <!--Cette div est celle de l'espace commportant le message:
+                            Les meilleurs CERs du moment-->
+                        <p class="Best">
+                            Découvrez ci-dessous les CERs les plus appréciés par notre
+                            commmunauté d'utilisateurs. Ces CERs ont été sélectrionnés
+                            et évaluées par nos membres en fonction de leur qualité, 
+                            pertinence et utilité.
+                        </p>
+                        <div class="forButtonVoirPlus">
+                            <button class="voirplus">Voir plus</button>
+                        </div>
+            </div>
+            <div class="cards">
+                <div class="cer-card_1">
+                    <img id="i1" src="assets\Accueil\Image (1).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Sadjo Mamadou</p>
+                        </div>
+                        <h3>Prosit 3.2 Annuaire Active Directory</h3>
+                        <p class="CER_info_paragraph">L'Annuaire Active Directory (AD) est un service de gestion des identités 
+                            et des accès utilisé principalement dans les environnements Windows. 
+                            Il permet de....</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+                <div class="cer-card_2">
+                    <img id="i2" src="assets\Accueil\Image (2).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Pauline lock</p>
+                        </div>
+                        <h3>Prosit 2.2 Modélisation UML</h3>
+                        <p class="CER_info_paragraph"> Le Langage de Modélisation Unifié, de l'anglais Unified Modeling 
+                            Language, est un langage de modélisation graphique à base de 
+                            pictogrammes conçu comme...</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+                <div class="cer-card_3">
+                    <img id="i3" src="assets\Accueil\Image (3).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Providence Djekoun</p>
+                        </div>
+                        <h3>Prosit 4.1 Développement avancé</h3>
+                        <p class="CER_info_paragraph">Advance Web Development fait référence au processus de création de sites Web 
+                            dynamiques et interactifs qui vont au-delà des pages Web statiques . Cela 
+                            implique l’utilisation de techniques et de technologies de codage avancées 
+                            pour créer des sites Web fonctionnels et visuellement attrayants qui 
+                            améliorent l’expérience utilisateur.</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+                <div class="cer-card_4">
+                    <img id="i4" src="assets\Accueil\Image (4).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Daryl Noupik</p>
+                        </div>
+                        <h3>Prosit 3.3 API et Webservice</h3>
+                        <p class="CER_info_paragraph">Les API sont principalement axées sur la communication entre applications
+                            pour l'accès aux fonctionnalités. L'EDI se concentre sur l'échange de 
+                            documents...</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+                <div class="cer-card_5">
+                    <img id="i5" src="assets\Accueil\Image (5).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Providence Djekoun.</p>
+                        </div>
+                        <h3>Prosit 4.5 Architecture microservices</h3>
+                        <p class="CER_info_paragraph">Une architecture de microservices est un type 
+                            d'architecture d'application dans laquelle l'application est développée 
+                            sous la forme d'un ensemble de services....</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+                <div class="cer-card_6">
+                    <img id="i6" src="assets\Accueil\Image (6).jpg" alt="i3">
+                    <div class="cer-info">
+                        <div class="like">
+                            <img class="heart" src="assets\Accueil\Sub Container.png" alt="Like or No">
+                            <p>par Sadjo Mamadou</p>
+                        </div>
+                        <h3>Prosit 4.5 Architecture distrubée</h3>
+                        <p class="CER_info_paragraph">L'architecture distribuée ou l'informatique distribuée désigne un système
+                            d'information ou un réseau pour lequel l'ensemble des ressources disponibles ne se trouvent...</p>
+                            <button class="consultButton">Consulter le CER</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="top_footer">
+
+            <div class="footerArchiva">
+                <div>
+                    <div class="logo_footer">
+                        <img id="archiva" src="assets\Accueil\logo.png" alt="Archiva">
+                    </div>
+                    <div>
+                        <div class="email">
+                            <img src="assets\Accueil\Icon_sms.png" alt="info@archiva.com">
+                            <p>info@archiva.com"</p>
+                        </div>
+                        <div class="telephone">
+                            <img src="assets\Accueil\Vector (Stroke).png" alt="Téléphone">
+                            <p>+237 600 000 000</p>
+                        </div>
+                        <div class="localisation">
+                            <img src="assets\Accueil\Subtract.png" alt="Localisation">
+                            <p>Yassa, Douala/Cameroun</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footerAccueil">
+                <h4>Accueil</h4>
+                <p>CERs</p>
+                <p>Mes CERs favories</p>
+                <p>Gestion de CER</p>
+            </div>
+
+            <div class="footerSocialProfiles">
+                <h4>Social Profiles</h4>
+                    <div class="SocialNetworks">
+                        <img src="assets\Accueil\Button.png" alt="Facebook">
+                        <img src="assets\Accueil\Button (1).png" alt="Twitter">
+                        <img src="assets\Accueil\Button.png" alt="LinkedIn">
+                    </div>
+                </div>
+            </div>
+        <div class="droitAuteur">
+            <p>© 2024 Archiva. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
